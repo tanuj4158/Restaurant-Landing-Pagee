@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy Symphony | Fusion Dining Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Spicy Symphony</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" data-aos="fade-in">
+        <div class="hero-content">
+            <h2>Where Flavors Dance on Your Palate</h2>
+            <p>Experience the perfect harmony of spices from around the world</p>
+            <div class="hero-buttons">
+                <a href="#reservations" class="btn">Reserve a Table</a>
+                <a href="#menu" class="btn btn-outline">View Menu</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about" data-aos="fade-up">
+        <div class="container">
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>Founded in 2015, Spicy Symphony brings together the best culinary traditions from India, Italy, and beyond. Our chef, Rajiv Kapoor, trained in Michelin-starred kitchens across Europe before returning to his roots to create this unique fusion experience.</p>
+                <p>We believe in "no compromise" - authentic spices imported directly from their regions of origin, locally-sourced organic produce, and traditional cooking methods adapted for modern palates.</p>
+                <div class="signature">
+                    <img src="https://i.imgur.com/Jc9Qq3E.png" alt="Chef's signature">
+                    <p>Chef Rajiv Kapoor</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://i.pinimg.com/736x/bc/af/9d/bcaf9d6185ef7d424317f7f98df8a8d2.jpg" alt="Chef cooking animation">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu" data-aos="fade-up">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="indian">Indian</button>
+                <button class="tab-btn" data-category="italian">Italian</button>
+                <button class="tab-btn" data-category="fusion">Fusion</button>
+                <button class="tab-btn" data-category="drinks">Drinks</button>
+            </div>
+            
+            <div class="menu-items" id="indian">
+                <!-- Loaded via JavaScript -->
+            </div>
+            <div class="menu-items hidden" id="italian"></div>
+            <div class="menu-items hidden" id="fusion"></div>
+            <div class="menu-items hidden" id="drinks"></div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery" data-aos="fade-up">
+        <h2>Food Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/b6/ee/2b/b6ee2bbd1e6d49b562c23ede78fd6f7b.jpg" alt="Biryani being prepared">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/76/6b/ad/766badbfbc6da68e38c01741c4cf143e.jpg" alt="Pasta tossing">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/1200x/fe/74/f8/fe74f82e9eb922b7ec2964371f12e5d1.jpg"" alt="Tandoori cooking">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/69/7c/9b/697c9b3a7efa90dfe1d832933f176eb4.jpg" alt="Finished dish 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/9f/85/64/9f8564de8a3805d9bf5f9175e727f34b.jpg" alt="Finished dish 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/1200x/3a/9e/7d/3a9e7dca4f5b308ea600ec8308b0a6fd.jpg" alt="Finished dish 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/1200x/0b/5e/b4/0b5eb439a0fe2c71aa7b427d3402e1ea.jpg" alt="Finished dish 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/1e/cf/70/1ecf707077b0898822861262415ab118.jpg" alt="Finished dish 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section class="reservations" id="reservations" data-aos="fade-up">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <input type="time" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Number of Guests</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3-4">3-4 People</option>
+                        <option value="5-6">5-6 People</option>
+                        <option value="7+">7+ People</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <textarea placeholder="Special Requests (Allergies, Celebrations, etc.)"></textarea>
+                </div>
+                <button type="submit" class="btn">Book Table</button>
+            </form>
+        </div>
+    </section>
+
+      <!-- Blog -->
+  <section class="blog">
+    <h2>Latest Blogs</h2>
+    <div class="blog-cards">
+      <div class="blog-card">
+        <img src="https://i.pinimg.com/1200x/a7/f0/6c/a7f06cc83973f6586ce6cf8e86d73879.jpg" alt="">
+        <h4>Secrets of Indian Spices</h4>
+        <p>Discover the hidden stories and health benefits of Indian masalas.</p>
+      </div>
+      <div class="blog-card">
+        <img src="https://i.pinimg.com/736x/95/e8/b2/95e8b2fb6971d469872a4ea739c5d7c5.jpg" alt="">
+        <h4>Design Behind Our Kitchen</h4>
+        <p>Peek into our kitchen and meet the artists behind each dish.</p>
+      </div>
+      <div class="blog-card">
+        <img src="https://i.pinimg.com/1200x/7c/a6/54/7ca65499d4a7d6ee290c2edd656a46f2.jpg" alt="">
+        <h4>Chai Culture in India</h4>
+        <p>Explore how tea became an emotion in every Indian home.</p>
+      </div>
+      <div class="blog-card">
+        <img src="https://i.pinimg.com/736x/fc/ab/4b/fcab4bb6c964cf2bfc4e7ebbcdfc9beb.jpg" alt="">
+        <h4>Festive Flavors</h4>
+        <p>How we prepare exclusive dishes for Diwali, Holi, and more.</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Spicy Symphony</h3>
+                    <p>Where global flavors meet local ingredients in perfect harmony.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservations">Reservations</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Spice Lane, Flavor City</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@spicysymphony.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Spicy Symphony. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
